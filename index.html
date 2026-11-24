@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Navdeep Chhillar — Software Engineer & AI/ML Developer</title>
+<meta name="description" content="Navdeep Chhillar — B.Tech CSE (AI & ML) at MAIT. Software Engineer & AI/ML Developer building full-stack and LLM-powered apps with Python, React, FastAPI, LangChain, LangGraph and RAG. Open to SDE, AI/ML and GenAI roles.">
+<meta property="og:title" content="Navdeep Chhillar — Software Engineer & AI/ML Developer">
+<meta property="og:description" content="Full-stack & LLM apps · Python · React · FastAPI · LangGraph · RAG · Open to work">
+<meta property="og:image" content="og-banner.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#030305;--panel:rgba(255,255,255,.04);--line:rgba(255,255,255,.1);--ink:#f1f5f9;--muted:#94a3b8;--c:#22d3ee;--v:#8b5cf6;--v2:#c4b5fd;--g:#22c55e}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  #bg{position:fixed;inset:0;z-index:0}
+  .wrap{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 20px}
+  nav{position:fixed;top:0;left:0;right:0;z-index:10;backdrop-filter:blur(12px);background:rgba(3,3,5,.6);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .logo{font-family:"Space Grotesk";font-weight:700;font-size:20px;letter-spacing:.5px}
+  .logo span{background:linear-gradient(90deg,var(--c),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+  .links a:hover{color:var(--ink)}
+  @media(max-width:720px){.links{display:none}}
+  /* hero */
+  .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:80px}
+  .otw{display:inline-flex;align-items:center;gap:10px;width:max-content;padding:8px 16px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:2px;color:#04130a;background:linear-gradient(90deg,var(--g),var(--c));box-shadow:0 0 30px rgba(34,197,94,.45)}
+  @media(max-width:520px){.otw{font-size:11px;letter-spacing:1px;padding:7px 12px}}
+  .otw i{width:8px;height:8px;border-radius:50%;background:#04130a;animation:pulse 1.6s infinite}
+  @keyframes pulse{50%{opacity:.25}}
+  h1{font-family:"Space Grotesk";font-size:clamp(44px,8vw,96px);line-height:1.02;margin:22px 0 10px;letter-spacing:-1px;
+     text-shadow:2px 2px 0 var(--c),4px 4px 0 #6d4fd8,6px 6px 0 #4a32a8,10px 10px 30px rgba(0,0,0,.8)}
+  .roles{font-family:"Space Grotesk";font-size:clamp(18px,2.6vw,28px);color:var(--muted)}
+  .roles b{color:var(--c)} .roles em{color:var(--v2);font-style:normal;font-weight:700}
+  .typed{border-right:2px solid var(--c);padding-right:4px;color:var(--ink)}
+  .hero p.lead{max-width:640px;margin-top:18px;color:#cbd5e1;font-size:17px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s}
+  .btn.p{background:linear-gradient(90deg,var(--c),var(--v));color:#05050a;box-shadow:0 6px 0 #4a32a8,0 10px 30px rgba(139,92,246,.4)}
+  .btn.s{border:1px solid var(--line);background:var(--panel)}
+  .btn:hover{transform:translateY(-3px)}
+  .scroll{margin-top:60px;color:var(--muted);font-size:13px;letter-spacing:3px}
+  .hero-grid{display:grid;grid-template-columns:1.35fr 1fr;align-items:center;gap:40px}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.photo{order:-1;margin-top:20px}}
+  .photo{position:relative;width:min(340px,70vw);aspect-ratio:1;justify-self:center;perspective:900px}
+  .photo .ring{position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 0deg,var(--c),var(--v),var(--g),var(--c));animation:spin 6s linear infinite;filter:blur(1px);box-shadow:0 0 60px rgba(139,92,246,.45)}
+  .photo .img{position:absolute;inset:0;border-radius:50%;overflow:hidden;border:6px solid var(--bg);transform-style:preserve-3d;transition:transform .2s}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .photo .badge{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);white-space:nowrap;padding:7px 16px;border-radius:999px;font-weight:800;font-size:13px;letter-spacing:2px;color:#04130a;background:linear-gradient(90deg,var(--g),var(--c));box-shadow:0 4px 0 #0e7a3c,0 0 24px rgba(34,197,94,.6)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  /* sections */
+  section{padding:100px 0}
+  .tag{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--c);font-weight:600}
+  h2{font-family:"Space Grotesk";font-size:clamp(30px,4.5vw,46px);margin:6px 0 34px}
+  h2 span{background:linear-gradient(90deg,var(--c),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .glass{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:18px;backdrop-filter:blur(8px)}
+  .about{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+  @media(max-width:820px){.about{grid-template-columns:1fr}}
+  .about .glass{padding:28px}
+  .about p{color:#cbd5e1;margin-bottom:12px}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .stat{padding:22px;text-align:center}
+  .stat b{display:block;font-family:"Space Grotesk";font-size:34px;background:linear-gradient(90deg,var(--c),var(--v2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{color:var(--muted);font-size:13px}
+  /* skills */
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .card{padding:24px;transform-style:preserve-3d;transition:transform .15s ease-out,box-shadow .3s}
+  .card:hover{box-shadow:0 20px 50px rgba(34,211,238,.15)}
+  .card h3{font-family:"Space Grotesk";font-size:19px;margin-bottom:12px;transform:translateZ(30px)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;transform:translateZ(20px)}
+  .chip{padding:5px 11px;border-radius:8px;font-size:13px;font-weight:600;background:rgba(255,255,255,.06);border:1px solid var(--line);box-shadow:0 3px 0 rgba(34,211,238,.35)}
+  .chip.v{box-shadow:0 3px 0 rgba(139,92,246,.55)}
+  /* timeline */
+  .tl{position:relative;padding-left:28px}
+  .tl:before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--c),var(--v))}
+  .item{position:relative;padding:22px 24px;margin-bottom:18px}
+  .item:before{content:"";position:absolute;left:-26px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--c);box-shadow:0 0 14px var(--c)}
+  .item h3{font-family:"Space Grotesk";font-size:19px}
+  .item .meta{color:var(--v2);font-size:14px;margin:2px 0 10px}
+  .item ul{padding-left:18px;color:#cbd5e1;font-size:15px}
+  /* projects */
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
+  .proj{padding:26px;display:flex;flex-direction:column;gap:12px}
+  .proj .icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:linear-gradient(135deg,rgba(34,211,238,.25),rgba(139,92,246,.3));border:1px solid var(--line);transform:translateZ(40px)}
+  .proj h3{font-family:"Space Grotesk";font-size:20px;transform:translateZ(30px)}
+  .proj p{color:#cbd5e1;font-size:15px;flex:1}
+  .proj .gh{color:var(--c);font-weight:600;font-size:14px}
+  /* certs */
+  .certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .cert{padding:22px}
+  .cert b{font-family:"Space Grotesk";font-size:17px;display:block}
+  .cert span{color:var(--muted);font-size:14px}
+  /* contact */
+  .contact{padding:44px;text-align:center}
+  .contact p{color:#cbd5e1;max-width:560px;margin:0 auto 26px}
+  .contact .cta{justify-content:center}
+  footer{padding:30px 0 50px;text-align:center;color:var(--muted);font-size:13px}
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
+  .reveal.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">N<span>C</span>.</a>
+  <div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+  <a class="btn s" href="Navdeep_Chhillar_Resume.pdf" download style="padding:8px 14px;font-size:13px">Resume ↓</a>
+</div></nav>
+
+<header class="hero wrap" id="top"><div class="hero-grid"><div>
+  <span class="otw"><i></i>#OPEN TO WORK · PAN-INDIA · REMOTE</span>
+  <h1>Navdeep<br>Chhillar</h1>
+  <div class="roles"><b>Software Engineer</b> &amp; <em>AI/ML Developer</em> — I build <span class="typed" id="typed">full-stack apps</span></div>
+  <p class="lead">B.Tech CSE (AI &amp; ML) at MAIT, Delhi · CGPA 8.04 · I ship React frontends, Python/FastAPI backends and RAG / multi-agent LLM pipelines end to end.</p>
+  <div class="cta">
+    <a class="btn p" href="mailto:navdeepchhillar12@gmail.com">✉ Hire me</a>
+    <a class="btn s" href="https://github.com/navdeepchhillar" target="_blank" rel="noopener">⌘ GitHub</a>
+    <a class="btn s" href="https://www.linkedin.com/in/iamnavdeepchhillar" target="_blank" rel="noopener">in LinkedIn</a>
+    <a class="btn s" href="Navdeep_Chhillar_Resume.pdf" download>⬇ Resume</a>
+  </div>
+  <div class="scroll">SCROLL ↓</div>
+  </div>
+  <div class="photo"><div class="ring"></div><div class="img tilt-photo"><img src="navdeep.jpg" alt="Navdeep Chhillar"></div><span class="badge">#OPENTOWORK</span></div>
+</div></header>
+
+<section id="about"><div class="wrap reveal">
+  <div class="tag">About</div>
+  <h2>Builder of <span>useful AI</span> software</h2>
+  <div class="about">
+    <div class="glass">
+      <p>I'm a Computer Science (AI &amp; ML) student at Maharaja Agrasen Institute of Technology who likes taking ideas all the way to working software — designing the API, building the UI, wiring the data layer and making the LLM parts reliable.</p>
+      <p>At <b>Maruti Suzuki</b> I built an agentic AI support bot for employee queries designed for the ServiceNow service desk, and at <b>E-Fill Electric</b> I ran a PLM-ERP gap analysis and built the Chargewise EV charging assistant prototype.</p>
+      <p>I'm looking for <b>Software Engineer (SDE), AI/ML and GenAI</b> internships and entry-level roles — anywhere in India, on-site, hybrid or remote.</p>
+    </div>
+    <div class="stats">
+      <div class="glass stat"><b>8.04</b><span>CGPA · MAIT</span></div>
+      <div class="glass stat"><b>2</b><span>Industry internships</span></div>
+      <div class="glass stat"><b>~3×</b><span>Faster LLM pipeline</span></div>
+      <div class="glass stat"><b>11</b><span>REST endpoints shipped</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap reveal">
+  <div class="tag">Skills</div>
+  <h2>My <span>toolkit</span></h2>
+  <div class="skills">
+    <div class="glass card tilt"><h3>Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">SQL</span><span class="chip">C++</span></div></div>
+    <div class="glass card tilt"><h3>Web &amp; Backend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">FastAPI</span><span class="chip">REST APIs</span><span class="chip">Tailwind CSS</span><span class="chip">asyncio</span><span class="chip">Axios</span></div></div>
+    <div class="glass card tilt"><h3>AI / LLM</h3><div class="chips"><span class="chip v">LLMs</span><span class="chip v">RAG</span><span class="chip v">LangChain</span><span class="chip v">LangGraph</span><span class="chip v">FAISS</span><span class="chip v">Sentence Transformers</span><span class="chip v">Gemini</span><span class="chip v">Groq / Llama 3</span></div></div>
+    <div class="glass card tilt"><h3>ML &amp; Vision</h3><div class="chips"><span class="chip v">scikit-learn</span><span class="chip v">TensorFlow</span><span class="chip v">spaCy / NLP</span><span class="chip v">OpenCV</span><span class="chip v">YOLOv5</span><span class="chip v">MediaPipe</span></div></div>
+    <div class="glass card tilt"><h3>Data</h3><div class="chips"><span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">SQLite</span><span class="chip">Power BI</span></div></div>
+    <div class="glass card tilt"><h3>Practices</h3><div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">DSA</span><span class="chip">OOP</span><span class="chip">DBMS</span><span class="chip">API testing</span><span class="chip">AI coding tools</span></div></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap reveal">
+  <div class="tag">Experience</div>
+  <h2>Where I've <span>worked</span></h2>
+  <div class="tl">
+    <div class="glass item"><h3>Intern — PLM/ERP Analysis &amp; Prototype Development · E-Fill Electric</h3><div class="meta">Jun 2026 – Jul 2026 · Remote</div>
+      <ul><li>Mapped Production and Quality workflows and ran a PLM-ERP gap analysis on BOM revision control and defect traceability.</li><li>Built the Chargewise EV charging assistant prototype with explicit, traceable decision rules.</li></ul></div>
+    <div class="glass item"><h3>Machine Learning Intern · Maruti Suzuki India Limited</h3><div class="meta">Jun 2025 – Aug 2025 · Gurugram</div>
+      <ul><li>Developed an agentic AI support bot that auto-generates responses to employee queries, designed for the ServiceNow Service Desk workflow.</li><li>Created a machine learning library from organisational data; cleaned and preprocessed a large, noisy real-world query dataset.</li><li>Evaluated outputs and iteratively refined prompts, data and the inference pipeline.</li></ul></div>
+    <div class="glass item"><h3>Creative Head · Google Developer Groups (GDG) on Campus MAIT</h3><div class="meta">Sep 2024 – May 2025 · Delhi</div>
+      <ul><li>Led creative direction for 5 technical and community events and coordinated cross-functional teams.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap reveal">
+  <div class="tag">Projects</div>
+  <h2>Things I've <span>built</span></h2>
+  <div class="projects">
+    <a class="glass proj tilt" href="https://github.com/navdeepchhillar/Charge-Wise" target="_blank" rel="noopener"><div class="icon">⚡</div><h3>Chargewise — EV Charging Assistant</h3><p>React + TypeScript dashboard with a Leaflet map, station filters, comparison and explainable server-side ranking. Optional FastAPI + SQLite backend and a scikit-learn queue-time model shared by both backends.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">FastAPI</span><span class="chip v">scikit-learn</span></div><span class="gh">View on GitHub →</span></a>
+    <a class="glass proj tilt" href="https://github.com/navdeepchhillar/AI-Notes-Study" target="_blank" rel="noopener"><div class="icon">🧠</div><h3>AI Study Assistant — Notes &amp; Mind Maps</h3><p>Upload PDFs, Word or text files and get AI-generated study notes and interactive mind maps. 11 REST endpoints, async MongoDB, React Flow UI and hardened LLM JSON output.</p><div class="chips"><span class="chip">React</span><span class="chip">FastAPI</span><span class="chip">MongoDB</span><span class="chip v">Gemini</span></div><span class="gh">View on GitHub →</span></a>
+    <a class="glass proj tilt" href="https://github.com/navdeepchhillar/Cognitive-Routing-RAG" target="_blank" rel="noopener"><div class="icon">🕸</div><h3>Cognitive Routing &amp; RAG</h3><p>3-stage multi-agent LLM pipeline: FAISS vector routing, a LangGraph workflow with strict JSON output and thread-context RAG. ~3× faster with concurrency, batching and lazy loading; retries and prompt-injection defence.</p><div class="chips"><span class="chip v">LangGraph</span><span class="chip v">FAISS</span><span class="chip">FastAPI</span><span class="chip v">Llama 3</span></div><span class="gh">View on GitHub →</span></a>
+    <a class="glass proj tilt" href="https://github.com/navdeepchhillar/Vehicle-Detection-and-Classification-Using-Computer-Vision" target="_blank" rel="noopener"><div class="icon">🚗</div><h3>Vehicle Detection &amp; Counting</h3><p>Real-time detection, tracking and counting of cars, buses and trucks inside user-defined polygon regions using a custom-trained YOLOv5m model, OpenCV and SORT tracking.</p><div class="chips"><span class="chip v">YOLOv5</span><span class="chip v">OpenCV</span><span class="chip">Python</span></div><span class="gh">View on GitHub →</span></a>
+    <a class="glass proj tilt" href="https://github.com/navdeepchhillar/Hand-Detection" target="_blank" rel="noopener"><div class="icon">✋</div><h3>Real-Time Hand Detection</h3><p>Webcam hand and finger tracking with MediaPipe and OpenCV — detects up to two hands, labels left/right and draws all 21 landmarks.</p><div class="chips"><span class="chip v">MediaPipe</span><span class="chip v">OpenCV</span><span class="chip">Python</span></div><span class="gh">View on GitHub →</span></a>
+  </div>
+</div></section>
+
+<section id="certs"><div class="wrap reveal">
+  <div class="tag">Education &amp; Certifications</div>
+  <h2>Always <span>learning</span></h2>
+  <div class="certs">
+    <div class="glass cert"><b>B.Tech, CSE (AI &amp; ML)</b><span>Maharaja Agrasen Institute of Technology, Delhi · 2023 – 2027 · CGPA 8.04</span></div>
+    <div class="glass cert"><b>Advanced Learning Algorithms</b><span>DeepLearning.AI · 2026</span></div>
+    <div class="glass cert"><b>Supervised Machine Learning: Regression and Classification</b><span>DeepLearning.AI &amp; Stanford University</span></div>
+    <div class="glass cert"><b>Kendriya Vidyalaya, New Delhi</b><span>Class XII (CS) 79% · Class X 91.8%</span></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+  <div class="glass contact">
+    <div class="tag">Contact</div>
+    <h2>Let's <span>build something</span></h2>
+    <p>I'm open to Software Engineer, AI/ML and GenAI roles and internships — anywhere in India, on-site, hybrid or remote. I can join immediately.</p>
+    <div class="cta">
+      <a class="btn p" href="mailto:navdeepchhillar12@gmail.com">✉ navdeepchhillar12@gmail.com</a>
+      <a class="btn s" href="https://www.linkedin.com/in/iamnavdeepchhillar" target="_blank" rel="noopener">in LinkedIn</a>
+      <a class="btn s" href="https://github.com/navdeepchhillar" target="_blank" rel="noopener">⌘ GitHub</a>
+    </div>
+  </div>
+</div></section>
+
+<footer>© 2026 Navdeep Chhillar · Built with Three.js</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// ---- 3D background: rotating glass icosahedron + particle network ----
+(function(){
+  if(!window.THREE) return;
+  const canvas=document.getElementById('bg');
+  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(60,1,0.1,100);camera.position.z=9;
+  function size(){renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();}
+  size();addEventListener('resize',size);
+
+  const group=new THREE.Group();scene.add(group);
+  const ico=new THREE.Mesh(new THREE.IcosahedronGeometry(2.3,1),new THREE.MeshBasicMaterial({color:0x22d3ee,wireframe:true,transparent:true,opacity:.55}));
+  const inner=new THREE.Mesh(new THREE.IcosahedronGeometry(1.4,0),new THREE.MeshBasicMaterial({color:0x8b5cf6,wireframe:true,transparent:true,opacity:.8}));
+  const knot=new THREE.Mesh(new THREE.TorusKnotGeometry(3.4,.03,220,8,2,3),new THREE.MeshBasicMaterial({color:0xa78bfa,transparent:true,opacity:.35}));
+  group.add(ico,inner,knot);
+
+  const N=650,pos=new Float32Array(N*3),col=new Float32Array(N*3);
+  const c1=new THREE.Color(0x22d3ee),c2=new THREE.Color(0x8b5cf6);
+  for(let i=0;i<N;i++){const r=6+Math.random()*12,t=Math.random()*Math.PI*2,p=Math.acos(2*Math.random()-1);
+    pos[i*3]=r*Math.sin(p)*Math.cos(t);pos[i*3+1]=r*Math.sin(p)*Math.sin(t);pos[i*3+2]=r*Math.cos(p)-4;
+    const c=c1.clone().lerp(c2,Math.random());col[i*3]=c.r;col[i*3+1]=c.g;col[i*3+2]=c.b;}
+  const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));pg.setAttribute('color',new THREE.BufferAttribute(col,3));
+  const stars=new THREE.Points(pg,new THREE.PointsMaterial({size:.06,vertexColors:true,transparent:true,opacity:.9}));scene.add(stars);
+
+  const grid=new THREE.GridHelper(80,60,0x8b5cf6,0x0e7490);grid.position.y=-6;grid.material.transparent=true;grid.material.opacity=.25;scene.add(grid);
+
+  let mx=0,my=0,scrollY0=0;
+  addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;});
+  addEventListener('scroll',()=>{scrollY0=scrollY;});
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  (function loop(t){
+    const s=reduce?0:1;
+    ico.rotation.x+=.002*s;ico.rotation.y+=.003*s;inner.rotation.x-=.004*s;inner.rotation.y-=.002*s;knot.rotation.z+=.001*s;
+    stars.rotation.y+=.0004*s;
+    group.position.x=-1.5+mx*.8; group.position.y=-my*.6 - scrollY0*0.002;
+    if(innerWidth<820){group.position.x=0;group.scale.setScalar(.7);} else group.scale.setScalar(1);
+    camera.position.x+=(mx*1.5-camera.position.x)*.05;camera.position.y+=(-my*1.5-camera.position.y)*.05;camera.lookAt(0,0,0);
+    grid.position.z=(t*0.002*s)%1.33;
+    renderer.render(scene,camera);requestAnimationFrame(loop);
+  })(0);
+})();
+
+// ---- typing effect ----
+(function(){const words=['full-stack apps','RAG pipelines','multi-agent LLM systems','REST APIs','computer-vision tools'];let w=0,i=0,del=false;const el=document.getElementById('typed');
+  (function tick(){const word=words[w];el.textContent=word.slice(0,i);if(!del&&i<word.length)i++;else if(del&&i>0)i--;else{del=!del;if(!del)w=(w+1)%words.length;}
+    setTimeout(tick,del?40:(i===word.length?1400:80));})();})();
+
+// ---- 3D tilt on cards ----
+document.querySelectorAll('.tilt').forEach(c=>{
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    c.style.transform=`perspective(800px) rotateY(${x*12}deg) rotateX(${-y*12}deg) translateZ(6px)`;});
+  c.addEventListener('mouseleave',()=>{c.style.transform='';});
+});
+
+// ---- 3D tilt on the photo ----
+(function(){const p=document.querySelector('.tilt-photo');if(!p)return;addEventListener('mousemove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;p.style.transform=`rotateY(${x*18}deg) rotateX(${-y*18}deg)`;});})();
+// ---- reveal on scroll ----
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
