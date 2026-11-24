@@ -1,10 +1,10 @@
-# Navdeep Chhillar — 3D Portfolio
+# Navdeep — 3D Portfolio
 
 A single-page 3D portfolio (Three.js) in a black / cyan / violet theme.
 
 Files:
 - `index.html` — the whole site (HTML + CSS + JS; loads Three.js and Google Fonts from CDNs)
-- `Navdeep_Chhillar_Resume.pdf` — the resume behind the "Resume" buttons
+- `Navdeep_Resume.pdf` — the resume behind the "Resume" buttons
 - `og-banner.png` — preview image when the link is shared
 
 ## Put it online (free, ~2 minutes)
